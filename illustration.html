@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+      .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url(images/illustration-bg.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+      .illustration-title {
+            font-size: 48px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+
+      .illustration-text {
+            width: 80%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+      .illustration-text h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+      .illustration-text p {
+            font-size: 20px;
+            color: #555;
+        }
+
+
+      .text-o h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+      .text-o p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+
+      .illustration-img {
+            width: 80%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+      .illustration-img img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+
+      .image-container {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+
+      .image-container img {
+            width: 30%;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="active nav-item"><a class="nav-link" href="./index.html"><img
+                                    src="./images/首页.png" alt="">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contents.html"><img
+                                    src="./images/目录.png" alt="">目录</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./font.html"><img
+                                    src="./images/字体样式.png" alt="">字体设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./illustration.html"><img
+                                    src="./images/标识.png" alt="">图形设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./design.html"><img
+                                    src="./images/纹样设计.png" alt="">纹样设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./photo.html"><img
+                                    src="./images/大包装.png" alt="">照片墙</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./board.html"><img
+                                    src="./images/大包装.png" alt="">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="illustration-text">
+                <h1>插图展示</h1>
+                <p>Illustration works</p>
+                <div class="text-o">
+                    <h3>插图特点</h3>
+                    <p>整体上，这些插画通过鲜艳的颜色和简洁的设计传达了欢乐和庆祝的氛围，非常符合春节这一重要节日的主题</p>
+                </div>
+            </div>
+            <div class="illustration-img">
+                <img src="./images/ii.png" alt="">
+            </div>
+            <div class="image-container">
+                <img src="./images/img1.png" alt="">
+                <img src="./images/img2.png" alt="">
+                <img src="./images/img3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

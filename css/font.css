@@ -1,0 +1,61 @@
+.box .bg5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: url('../images/bg5.png') no-repeat;
+  background-size: 100% 100%;
+}
+.font {
+  height: 100%;
+  position: relative;
+}
+.font .font-img {
+  width: 936px;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.font .font-img img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+.font .font-img img:hover {
+  transform: scale(0.86);
+}
+.font .font-img img:active {
+  transform: translateY(-20px) scale(1.2);
+}
+.font .font-text {
+  width: 936px;
+  position: absolute;
+  bottom: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  color: #d39d5e;
+}
+.font .font-text > div:nth-child(1) {
+  width: 20%;
+  text-align: left;
+}
+.font .font-text > div:nth-child(1) h1 {
+  font-size: 40px;
+}
+.font .font-text > div:nth-child(2) {
+  width: 70%;
+}
+.text-o {
+  background-color: #f2e4bf;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.text-o p {
+  font-size: 14px;
+}

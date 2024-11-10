@@ -1,0 +1,266 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.box {
+  width: 1440px;
+  height: 930;
+  border: 4px solid #f8d493;
+  margin: 10px auto;
+}
+
+.main {
+  width: 100%;
+ 
+  height: 820px;
+  padding: 20px;
+  background: url(../images/IMG_3466.png);
+ 
+  background-size: 100% 100%;
+}
+
+.main-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.layout-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1A1A1A;
+  width: 260px;
+  height: 50px;
+  background: orange;
+  border-radius: 50px;
+  box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+  padding-left: 100PX;
+}
+
+.user-info {
+  width: 100%;
+}
+
+.birth-date,
+.interest-item,
+.university,
+.major,
+.degree,
+.phone-number {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* 悬停移动样式 */
+.birth-date:hover,
+.interest-item:hover,
+.university:hover,
+.major:hover,
+.degree:hover,
+.phone-number:hover {
+  background-color: #1879d3;
+  color: #fff;
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-place {
+  display: flex;
+  align-items: center;
+}
+
+.university-info {
+  display: flex;
+  flex-direction: column;
+}
+/* 右边内容,包括上方自我介绍盒子和这是我的notion盒子 */
+.right-content {
+  width: 60%;
+  padding: 20px;
+}
+/* 这是页面中每个小模块的样式 */
+.upper-section,
+.lower-section {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 260px;
+  height: 50px;
+  background: #FFD57E;
+  box-shadow: -5px 5px 5px orange;
+  line-height: 50px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+p {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.lower-section-p p {
+  width: 200px;
+  height: 300px;
+  padding-right: 20px;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+
+.notion-title {
+  text-align: left;
+}
+
+.nav ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li img {
+  width: 30px; /* 调整图片大小为 30px */
+  margin-right: 10px;
+}
+
+.nav ul li:hover {
+  background-color: #f7a2c1;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+ .box {
+      width: 100%;
+      margin: 10px auto;
+      position: relative;
+      border: none;
+  }
+
+ .main {
+      width: 100%;
+      padding: 20px;
+      background: none;
+  }
+
+ .layout-wrapper {
+      flex-direction: column;
+  }
+
+ .left-info,
+ .right-content {
+      width: 100%;
+      padding: 20px;
+  }
+
+ .profile {
+      margin-bottom: 15px;
+  }
+
+ .img {
+      width: 100px;
+      height: 100px;
+  }
+
+ .name {
+      font-size: 24px;
+  }
+
+ .user-info div {
+      font-size: 16px;
+      line-height: 25px;
+  }
+
+ .upper-section,
+ .lower-section {
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 10px;
+  }
+
+ .title {
+      font-size: 20px;
+  }
+
+ .p {
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+ .lower-section-p p {
+      width: auto;
+      height: auto;
+      padding-right: 0;
+      color: #1a1a1a;
+      font-size: 16px;
+  }
+}

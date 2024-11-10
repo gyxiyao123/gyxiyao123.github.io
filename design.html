@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+
+      .main {
+            width: 100%;
+            padding: 20px;
+            background: url(images/design-bg.png) no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+      .page-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+
+      .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 15px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 30px;
+        }
+
+
+      .image-card {
+            flex-basis: calc((100% - 45px) / 4);
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+      .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+      .image-card:hover {
+            transform: scale(1.05);
+        }
+
+      .design-text {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+
+      .text-o {
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+ 
+          .navbar-nav {
+                flex-direction: column;
+            }
+
+          .nav-item {
+                margin-bottom: 10px;
+            }
+
+
+          .image-section {
+                align-items: center;
+            }
+
+
+          .image-card {
+                flex-basis: 100%;
+                height: 300px;
+                margin-bottom: 15px;
+            }
+
+           .image-card img {
+                max-height: 300px;
+            }
+
+
+          .design-text {
+                width: 100%;
+            }
+
+          .text-o p {
+                width: auto;
+                padding-right: 0;
+                font-size: 16px;
+            }
+
+          .page-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="active nav-item"><a class="nav-link" href="./index.html"><img
+                                    src="./images/首页.png" alt="">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contents.html"><img
+                                    src="./images/目录.png" alt="">目录</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./font.html"><img
+                                    src="./images/字体样式.png" alt="">字体设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./illustration.html"><img
+                                    src="./images/标识.png" alt="">图形设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./design.html"><img
+                                    src="./images/纹样设计.png" alt="">纹样设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./photo.html"><img
+                                    src="./images/大包装.png" alt="">照片墙</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./board.html"><img
+                                    src="./images/大包装.png" alt="">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="page-title-container">
+                <h1 class="page-title">纹样展示</h1>
+            </div>
+            <div class="image-section">
+                <div class="image-card">
+                    <img src="./images/wy1.jpg" alt="纹样1">
+                </div>
+                <div class="image-card">
+                    <img src="./images/wy2.jpg" alt="纹样2">
+                </div>
+                <div class="image-card">
+                    <img src="./images/wy3.jpg" alt="纹样3">
+                </div>
+                <div class="image-card">
+                    <img src="./images/wy4.jpg" alt="纹样4">
+                </div>
+            </div>
+            <div class="text-section">
+                <div class="design-text">
+                    <div class="text-o">
+                        <h3>纹样特点</h3>
+                        <p>在于它们的对称性、重复性和象征意义，常用于传统服饰、家居装饰以及现代纹身艺术中。通过不同的颜色和图案组合，它们传达出不同的文化寓意和审美情趣。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg5"></div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

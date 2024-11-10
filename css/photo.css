@@ -1,0 +1,32 @@
+.box .bg5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: url('../images/photo-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.photo {
+  height: 100%;
+  position: relative;
+}
+.photo h1 {
+  font-size: 40px;
+  color: #d29c5e;
+  text-align: center;
+  margin: 20px 0;
+}
+.photo .zp-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #ede3ce;
+  border-radius: 20px;
+  height: 400px;
+  overflow-y: auto;
+}
+.photo .zp-box img {
+  width: 100%;
+}

@@ -1,0 +1,124 @@
+.box .bg5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: url('../images/lybg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.board {
+  width: 100%;
+  height: 100%;
+}
+.board .form {
+  width: 63%;
+  position: absolute;
+  top: 49%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: #d29c5e;
+}
+.board .form h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.board .form .input-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.board .form .input-item span {
+  display: block;
+  width: 80px;
+  color: #333;
+}
+.board .form .input-item input {
+  width: 60%;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f6daad;
+  box-sizing: border-box;
+  color: #fff;
+}
+.board .form .radio-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.board .form .radio-item span {
+  display: block;
+  width: 80px;
+  color: #333;
+}
+.board .form .radio-item input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f6daad;
+  box-sizing: border-box;
+  color: #fff;
+  margin-right: 10px;
+}
+.board .form .select-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.board .form .select-item span {
+  display: block;
+  width: 80px;
+  color: #333;
+}
+.board .form .select-item select {
+  width: 60%;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f6daad;
+  box-sizing: border-box;
+  color: #fff;
+}
+.board .form .textarea-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.board .form .textarea-item span {
+  display: block;
+  width: 80px;
+  color: #333;
+}
+.board .form .textarea-item textarea {
+  width: 60%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #f6daad;
+  box-sizing: border-box;
+  color: #fff;
+  resize: none;
+}
+.board .form .btn {
+  width: 20%;
+  margin: 30px auto;
+  background-color: #a87728;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}

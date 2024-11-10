@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+     
+
+     .main {
+            width: 100%;
+            height: 820px;
+            padding: 20px;
+            background: url(images/lybg.png);
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+     .contact-form {
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+     .contact-form h1 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+     .input-item,
+     .radio-item,
+     .select-item,
+     .textarea-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+     .input-item span,
+     .radio-item span,
+     .select-item span,
+     .textarea-item span {
+            width: 80px;
+            font-size: 16px;
+            color: #555;
+        }
+
+     .input-item input,
+     .radio-item input,
+     .select-item select,
+     .textarea-item textarea {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+
+     .radio-item input {
+            margin-right: 5px;
+        }
+
+     .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+     .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="active nav-item"><a class="nav-link" href="./index.html"><img
+                                    src="./images/首页.png" alt="">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contents.html"><img
+                                    src="./images/目录.png" alt="">目录</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./font.html"><img
+                                    src="./images/字体样式.png" alt="">字体设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./illustration.html"><img
+                                    src="./images/标识.png" alt="">图形设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./design.html"><img
+                                    src="./images/纹样设计.png" alt="">纹样设计</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./photo.html"><img
+                                    src="./images/大包装.png" alt="">照片墙</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./board.html"><img
+                                    src="./images/大包装.png" alt="">留言板</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="contact-form">
+                <h1>如果您喜欢我的作品，请您联系我！</h1>
+                <div class="input-item">
+                    <span>用户：</span>
+                    <input type="text" placeholder="请输入用户名">
+                </div>
+                <div class="radio-item">
+                    <span>性别：</span>
+                    <input type="radio" name="sex" value="男">男
+                    <input type="radio" name="sex" value="女" style="margin-left: 10px;">女
+                </div>
+                <div class="input-item">
+                    <span>密码：</span>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="input-item">
+                    <span>确认密码：</span>
+                    <input type="password" placeholder="再次输入密码">
+                </div>
+                <div class="input-item">
+                    <span>邮箱：</span>
+                    <input type="email" placeholder="请输入邮箱">
+                </div>
+                <div class="input-item">
+                    <span>手机号码：</span>
+                    <input type="text" placeholder="请输入手机号码">
+                </div>
+                <div class="select-item">
+                    <span>喝茶风格：</span>
+                    <select name="tea_style" id="tea_style">
+                        <option value="1">绿茶</option>
+                        <option value="2">红茶</option>
+                        <option value="3">乌龙茶</option>
+                        <option value="4">普洱茶</option>
+                    </select>
+                </div>
+                <div class="textarea-item">
+                    <span>个人介绍：</span>
+                    <textarea name="introduction" id="introduction" cols="30" rows="10" placeholder="简单介绍一下自己"></textarea>
+                </div>
+                <div class="btn">提交</div>
+            </div>
+        </div>
+        <div class="bg5"></div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
